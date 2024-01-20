@@ -1,0 +1,139 @@
+/* pre-footer section */
+.pre--footer{
+    margin-top: 30px;
+    padding: 0 15%; 
+  
+  }
+  .pre--footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .prefooter-inner-item , .pre--footer {
+    display: flex;
+  
+  }
+  
+  .prefooter-inner-item , .prefooter-inner-item  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .prefooter-inner-item .item ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+  }
+  .prefooter-inner-item .item h3{
+    color: var(--primary-color);
+  }
+  
+  .prefooter-inner-item .item ul li a{
+    color: black;
+    font-size: var(--small-font-size);
+  }
+  
+  .prefooter-inner-item .item ul li a:hover{
+  text-decoration: underline;
+  }
+  
+  
+  .prefooter-inner-item  .countries-list{
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .countries-list a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--small-font-size);
+    color: #333;
+  
+  
+  
+  }
+  .pre--footer .item h3{
+    font-size: 20px;
+  }
+  
+  .countries-list a .icons{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .countries-list a .icons img{
+    width: 100%;
+  }
+  
+  .item .payment-list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 200px;
+  
+  }
+  .payment-list img{
+    width: 42px;
+  }
+  .item .verfied img{
+   width: 60px;
+  }
+  
+  
+  .prefooter-inner-item .item .exclusive-deals{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item .exclusive-deals .qr-scan{
+    width: 100px;
+    height: 100px;
+  }
+  .exclusive-deals .deals{
+    width: 90px;
+    cursor: pointer;
+  }
+  
+  
+  .qr-scan img, .deals img{
+    width: 100%;
+  }
+  
+  
+  .prefooter-inner-item  .exclusive-deals .deals{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .item .social-media{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+  }
+  
+  .social-media a{
+    font-size: 32px;
+  }
+  .fa-facebook{
+   color: blue;
+  }
+  .fa-youtube{
+   color: red;
+  
+  }
+  
+  .fa-whatsapp{
+    color: green;
+  }

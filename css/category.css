@@ -1,0 +1,320 @@
+a{
+   color: rgba(0, 0, 0, 0.831); 
+}
+   section{
+    padding: 0 15%;
+    margin-top: 20px;
+   }
+   body{
+    background-color: #FFFFFF;
+   }
+
+.black{
+    color:black
+}.silver{
+    color: silver;
+}
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+.top-navigate-breadcrumb .links a{
+  font-size:var(--low-medium-font-size);
+}
+.top-navigate-breadcrumb .links a:last-child{
+    color: var(--primary-color);
+}
+
+.top-navigate-breadcrumb .seprator{
+    margin: 0 8px;
+    color:#0000004d ;
+}
+.top-navigate-breadcrumb .links{
+    margin-top: 12px;
+    padding-bottom: 12px;
+    border-bottom:1px solid #e9e9e9;
+}
+.main-content{
+    display: flex;
+    gap: 20px;
+}
+
+/* side bar css */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    height: auto;
+    box-shadow: 4px 3px 14px 0 #0000000a;
+}
+
+
+.filter--title i{
+    display: none;
+}
+
+.sidebar .filter--title h3 {
+   font-size: var(--big-medium-font-size);
+   font-weight: bold;
+   padding: 20px 0;
+}
+.sidebar .filter-panel-title{
+    font-size: var(--medium-font-size);
+    font-weight: var( --regular-font-weight);
+    padding-bottom: 11px;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+
+}
+.filter-panel-body{
+    margin-top: 11px;
+    padding-bottom: 20px;
+}
+.filter-panel-body .filter-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.filter-panel-body .filter-item a.button{
+     display: flex; 
+     
+     gap: 9px;
+     align-items: center;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: var(--small-font-size);
+     height: 40px;
+     justify-content: center;
+     margin-bottom: 10px;
+     padding: 10px;
+     text-align: center;
+     border: 1px solid #0000001a;
+
+     transition: 0.3s;
+}
+.filter-panel-body .filter-item i {
+    font-size: 15px;
+}
+
+
+.filter-panel-body .filter-item a.button:hover {
+    border: 1px solid #F85606;
+
+}
+.filter-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+.filter-item ul li a{
+    font-size: var(--small-font-size);
+}
+.filter-item ul li a:hover{
+    color: var(--primary-color);
+}
+.filter-item input[type="number"]{
+     width: 60px;
+     height: 30px;
+     padding: 5px;
+     border: 1px solid #ccc;
+     outline: none;
+}
+
+.filter-item .view-more{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.filter-item button{
+    background-color: var(--primary-color);
+
+   border: none;
+   height: 30px;
+   width: 60px;
+
+   color: white;
+
+} 
+.filter-item .view-more p{
+    color: var(--primary-color);
+    font-size: var(--small-font-size);
+}
+
+.filter-item .checkbox-container {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.checkbox-container label{
+    font-size: var(--small-font-size);
+    color: rgba(0, 0, 0, 0.831); 
+
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* main content css */
+
+.main--contents {
+    width: 100%;
+}
+.main--contents .top-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.top-content .left-side{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.left-side .filter-mobile, .filter-icon {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.left-side .filter-icon{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #f8570627;
+    border-radius: 50%;    
+}
+
+
+
+.left-side .filter-mobile i{
+    color: var(--primary-color);
+   font-size: var(--medium-font-size);
+}
+
+
+.top-content p{
+    font-size: var(--small-font-size);
+}
+.top-content span{
+    color: var(--primary-color);
+}
+
+.top-content .right-side{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right-side select {
+    padding: 10px;
+    width: 160px;
+    font-size: var(--small-font-size);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url("../images/logos/caret-down-light.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+}
+
+
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 10px;
+    margin-top: 30px;
+    }
+    
+    .product-card a{
+      width: 188px;
+      color: #000;
+      background-color: white;
+    }
+    .product-card .fs-card-img-container{
+      width: 188px;
+      height: 188px;
+      margin-bottom: 4px;
+    }
+    
+    .product-card a:hover{
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .fs-card-img-container .fs-card-img{
+      height: 100%;
+    }
+    .product-card .card-text{
+      margin: 10px 8px;
+    }
+    .product-card .card-text .card-title{
+      height: 36px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: var(--small-font-size);
+    
+    }
+    
+    .product-card  .card-price{
+       margin-top: 4px;
+       margin-bottom: 4px;
+        font-size: var(--medium-font-size);
+        color: var(--primary-color);
+        letter-spacing: -.56px;
+        line-height: 22px;
+        height: 22px;
+    }
+    
+    .product-card .origin-price{
+      color: #9e9e9e;
+      font-size: var(--smaller-font-size);
+      text-decoration: line-through;
+      margin-bottom: 5px;
+    }
+    
+    .product-card .discount{
+      color: #212121;
+      margin-left: 4px;
+      font-size: var(--smaller-font-size);
+    }
+    
+    .product-card .ratings-comments{
+      display: flex;
+      gap: 3px;
+      margin-top: 3px;
+    }
+    
+    .product-card .ratings-comments i {
+      font-size: 11px;
+      color: #FACA51;
+    }
+    
+    
+    .product-card .ratings-comments p {
+      font-size: 12px;
+      color: #0000008b;
+    
+    }
+    

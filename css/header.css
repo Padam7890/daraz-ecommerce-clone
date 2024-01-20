@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --bold-font-weight:700;
+    --primary-color: #F85606;
+    --neutral-color:#F5F5F5;
+    --text-color: #333;
+    --button-color:#AD3C04;
+    --smaller-font-size:12px;
+    --small-font-size:14px;
+    --low-medium-font-size:15px;
+    --medium-font-size:18px;
+    --big-medium-font-size:20px;
+    --h3-font-size:22px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: var(--main-font);
+  background-color: #F5F5F5;
+}
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+
+}
+h3{
+  font-weight: var(--regular-font-weight);
+  font-size: var(--h3-font-size);
+  color: rgba(0, 0, 0, 0.766);
+}
+
+
+section {
+  padding: 0 15%; 
+  margin-top: 20px;
+}
+
+/* header starts from here */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 10px;
+    padding: 0 15%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  
+  
+  header .pre--header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pre--header .left-side ul{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pre--header .left-side ul a{
+    color: white;
+    font-size: var(--smaller-font-size);
+  }
+  
+  .pre--header .right-side button {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    background-color:var(--button-color);
+    color: white;
+    border: none;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  .pre--header .right-side button img {
+     height: auto;
+     width: 20px;;
+  }
+  
+  header .main--header, nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .main--header .logo {
+    width: 120px;
+  }
+  
+  .main--header .logo img{
+    width: 100%;
+    height: auto;
+  }
+  .mobile-menu-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .mobile-bar {
+    margin-right: 10px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-bar i {
+    font-size: 25px;
+    color: white;
+  }
+  .main--header .search{
+    position: relative;
+    width: 800px;
+    margin: 20px;
+  }
+  
+  .main--header .search input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+  }
+  .main--header .search button{
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFE1D2;
+    color: var(--primary-color);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .main--header .login , .main--header .signup,.main--header .line p, .main--header .lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: var(--bold-font-weight);
+    color: white;
+    font-size: var(--small-font-size);
+    cursor: pointer;
+    padding:  10px;
+  }
+  
+  .main--header .login:hover , .main--header .signup:hover,.main--header .lang:hover {
+       background-color: #ad3c0445;
+       border-radius: 8px;
+       transition: 0.4s;
+  }
+  
+  .main--header .login i , .main--header .lang i{
+    font-size: var(--low-medium-font-size);
+  
+  }
+  
+  .main--header .cart{
+    font-size: 28px;
+    color: white;
+    padding: 10px;
+  }
+  
+  .main--header .cart:hover{
+    background-color: #ad3c0445;
+    border-radius: 8px;
+  }
+  
+  /* mobiles menu  */
+
+.mobile-menus{
+  display: block;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: -300px; 
+  width: 300px;
+  height: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 15px;
+  z-index: 9999;
+  transition: left 0.3s ease-in-out;
+}
+
+.mobile-menus .mobile-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-menus .mobile-list a {
+  color: #333333f0;
+}
+.mobile-menus .cross i{
+  cursor: pointer;
+  font-size: 20px;
+}

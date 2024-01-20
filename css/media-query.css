@@ -1,0 +1,171 @@
+/* Media query for screens with a maximum width of 1600px */
+@media screen and (max-width: 1600px) {
+  header, section, .pre--footer, .inner-footer {
+    padding: 0 5%;
+  }
+}
+
+/* Media query for screens with a maximum width of 1300px */
+@media screen and (max-width: 1300px) {
+  header, section {
+    padding: 0 1%;
+  }
+  .main-content {
+    padding: 0 5%;
+  }
+  .hero--section nav {
+    display: none;
+  }
+  .ss-container {
+    max-width: 100%;
+  }
+  .channel--section ul {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 110px;
+    flex-wrap: wrap;
+  }
+  .channel--section ul li:nth-child(5):after {
+    display: none;
+  }
+  .product-card a {
+    flex-basis: 15%;
+  }
+}
+
+/* Media query for screens with a maximum width of 991px */
+@media screen and (max-width: 991px) {
+  .channel--section ul {
+    column-gap: 1550px;
+    flex-wrap: wrap;
+  }
+  .channel--section ul {
+    gap: 35px;
+  }
+  .inner-footer {
+    gap: 45px;
+  }
+  nav, header .pre--header {
+    display: none;
+  }
+  .mobile-bar {
+    display: block;
+  }
+  .mobile-menus.show {
+    display: flex;
+    left: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+  .left-side .filter-mobile, .filter-icon {
+    display: flex;
+  }
+  .sidebar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s ease;
+    overflow-y: scroll;
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 9999;
+  }
+  .sidebar.show {
+    left: 0;
+  }
+  .filter--title i {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+}
+
+/* Media query for screens with a maximum width of 840px */
+@media screen and (max-width: 840px) {
+  .categories--section .categories, .product-card, .main-mall-category {
+    background-color: white;
+    justify-content: space-between;
+  }
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media screen and (max-width: 700px) {
+  .channel--section ul {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    flex-wrap: wrap;
+  }
+  .channel--section ul li:nth-child(5):after {
+    display: block;
+  }
+  .product-card {
+    padding: 5px;
+    gap: 30px;
+  }
+  .channel--section ul li:nth-child(4):after, .channel--section ul li:nth-child(8):after {
+    display: none;
+  }
+  .categories--section .categories, .product-card, .main-mall-category {
+    justify-content: center;
+  }
+  .flash--section .pre-top-flash-sale .sale-end-timer {
+    display: none;
+  }
+  .main--footer {
+    display: none;
+  }
+}
+
+/* Media query for screens with a maximum width of 448px */
+@media screen and (max-width: 448px) {
+  .channel--section {
+    display: none;
+  }
+  section h3 {
+    text-align: center;
+  }
+  .categories--section .categories, .product-card, .main-mall-category {
+    gap: 2px;
+  }
+}
+
+/* Media query for screens with a maximum width of 420px */
+@media screen and (max-width: 420px) {
+  header .main--header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobile-menu-icon {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 3%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .main--header .search {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+  }
+  .mobile-menus.show {
+    width: 300px;
+  }
+}
+
+/* Media query for screens with a maximum width of 300px */
+@media screen and (max-width: 300px) {
+  .sidebar {
+    width: 100%;
+  }
+  .mobile-menus.show {
+    width: 100%;
+  }
+}
