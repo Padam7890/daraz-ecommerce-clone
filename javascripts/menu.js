@@ -9,11 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
   
       hamburgerIcon.classList.toggle("active");
       menu.classList.toggle("show");
+      cross.style.display = "block";
+
     });
     cross.addEventListener("click", function (e) {
       e.stopPropagation();
-      hamburgerIcon.classList.remove("active");
       menu.classList.remove("show");
+      cross.style.display = "none";
     });
     
     document.body.addEventListener("click", function () {
