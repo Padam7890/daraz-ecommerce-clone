@@ -158,6 +158,11 @@
   .mobile-menus.show {
     width: 300px;
   }
+    .product-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+    }  
 }
 
 /* Media query for screens with a maximum width of 300px */
